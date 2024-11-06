@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="studentlogin.css">
+     <link rel="icon" type="image/jpg" href="cdmlogo.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <title>Student Form -MotoPark</title>
+</head>
+     <body>
+<!----------------------------------------------HEADER------------------------------------->
+      <header class="nav"  data-aos="fade-down">
+           <a href="index.html">
+           <i id="back" class="fa-solid fa-backward"></i></a>
+           <ul class="nav_items">
+               <li class="nav_items">
+           <h2>STUDENT FORM</h2>
+          </li>
+           </ul>
+          </header>
+<!-----------------------------------------------STUDENT LOGIN------------------------------>
+      <div class="home" >
+           <div class="form_container" >
+           <div class="form login_form" >
+           <form action="#">
+              <h2>Sign In</h2>
+              <div class="input_box">
+               <input type="email" placeholder="Email" required/>
+               <i class="fa-solid fa-envelope email"></i>
+              </div>
+              <div class="input_box">
+               <input type="password" placeholder="Password" required/>
+               <i class="fa-solid fa-lock password"></i>
+               <i class="fa-solid fa-eye-slash pw_hide"></i>
+              </div>
+              <button class="button"><a href="studentdashboard.html">Sign In</a></button>
+
+              <div class="login_signup"> You don't have yet an account? <a href="studentsignup.html" id="signup">Sign Up</a>
+              </div>
+          </form>
+          </div>
+      </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init({
+         offset: 200,
+         duration: 2000,
+         });
+     </script>
+
+<script src="studentlogin.js"></script>
+     </body>
+</html>

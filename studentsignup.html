@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="studentsignup.css">
+     <link rel="icon" type="image/jpg" href="cdmlogo.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <title>Student Form -MotoPark</title>
+</head>
+     <body>
+<!----------------------------------------------HEADER------------------------------------->
+      <header class="nav"  data-aos="fade-down">
+           <a href="studentlogin.html">
+           <i id="back" class="fa-solid fa-backward"></i></a>
+           <ul class="nav_items">
+               <li class="nav_items">
+          </li>
+           </ul>
+          </header>
+<!-----------------------------------------------STUDENT LOGIN------------------------------>
+      <div class="container">
+         <h2>Sign Up</h2>
+         <form action="#">
+            <div class="form first">
+                <div class="details1">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full name</label>
+                            <input type="text" placeholder="Fullname" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Date of Birth" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Cell no.</label>
+                            <input type="text" placeholder="Cell no." required  pattern="09[0-9]{9}" maxlength="11" >
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option value="" disabled selected hidden>Gender</option>
+                                 <option value="Male">Male</option>
+                                 <option value="Female">Female</option>
+                             </select>    
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="Age" required min="17">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details2">
+                    <span class="title">Identity Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Student No.</label>
+                            <input type="text" placeholder="Student No." required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Year Level</label>
+                            <select required>
+                                <option value="" disabled selected hidden>Year Level</option>
+                                 <option value="Male">1st Year </option>
+                                 <option value="Female">2nd Year</option>
+                                 <option value="Female">3rd Year</option>
+                                 <option value="Female">4th Year</option>
+                             </select>    
+                        </div>
+
+                        <div class="input-field">
+                            <label>Institute</label>
+                            <select required>
+                                <option value="institute" disabled selected hidden>Institute</option>
+                                 <option value="ITE">Institute of Teacher Education(ITE)</option>
+                                 <option value="IBE">Institute of Business and Entrepreneurship(IBE)</option>
+                                 <option value="ICS">Institute of Computer Studies(ICS)</option>
+                             </select>    
+                        </div>
+
+                        <div class="input-field">
+                            <label for="course">Course</label>
+                            <select id="course" required>
+                                <option value="" disabled selected hidden>Select Course</option>
+                                <option value="BSIT">Bachelor of Science in Information Technology</option>
+                            </select>   
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Section</label>
+                            <input type="text" placeholder="Section" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Address" required>
+                        </div>
+                    </div>
+                    <button class="nextBtn">
+                        <span class="BtnText">NEXT</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+<!--------------------------------------Second form----------------------------------------->
+            <div class="formsecond">
+                <div class="details3">
+                    <span class="title">Account Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Username</label>
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Motorcycle Brand & Model</label>
+                            <input type="text" placeholder="Brand & Model" required >
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Color</label>
+                            <input type="text" placeholder="Color" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Year Model</label>
+                            <input type="number" placeholder="Year Model" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details4">
+                    <span class="title">Student Requirements Details</span>
+                    <h3>(NOTE 1:Please make sure that the number and info you encode is accurate in your id to avoid delaying your registration proccess)</h3>
+                    <h3>(NOTE 2:Please provide a clear images of your Student ID/Driver License/Original Receipt and Certificate of Registration in the last step.)</h3>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Student No.</label>
+                            <input type="text" placeholder="Student No." required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Driver License No.</label>
+                            <input type="text" placeholder="Driver License No." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Institute</label>
+                            <select required>
+                                <option value="institute" disabled selected hidden>Institute</option>
+                                 <option value="Pro">Professional</option>
+                                 <option value="Non-pro">Non-Professional</option>
+                             </select>    
+                        </div>
+
+                        <div class="input-field">
+                            <label >Original Receipt Issued</label>
+                            <input type="date" placeholder="Original Receipt Issued date" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Plate No.</label>
+                            <input type="text" placeholder="Plate No." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Rate Us</label>
+                            <select required>
+                                <option value="institute" disabled selected hidden>1-5 1 is the highest</option>
+                                 <option value="1">1</option>
+                                 <option value="Non-pro">2</option>
+                                 <option value="Non-pro">3</option>
+                                 <option value="Non-pro">4</option>
+                                 <option value="Non-pro">5</option>
+                             </select>    
+                        </div>
+                    </div>
+
+                 <div class="buttons">
+                    <div class="backBtn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="BtnText">BACK</span>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="BtnText">SEND NOW</a></span>
+                        <i class="fa-solid fa-share-from-square"></i>
+                    </button>
+
+                    <button class="nextBtn">
+                        <span class="BtnText"><a href="requirements.html">PROCEED</a></span>
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                    </div>
+                </div>
+            </div>
+         </form>
+      </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init({
+         offset: 200,
+         duration: 2000,
+         });
+     </script>
+
+<script src="studentsignup.js"></script>
+     </body>
+</html>

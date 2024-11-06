@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+      <title>Admin Dashboard -CDM Motopark</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="admindashboard.css">
+     <link rel="icon" type="image/jpg" href="cdmlogo.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+     </head>
+        <body>
+          <div class="sidebar">
+            <div class="logo"></div>
+            <ul class="menu">
+              <div class="brand">
+                <i class="fa-sharp-duotone fa-solid fa-motorcycle"></i>
+                <span>CDM Motopark</span>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+              <li class="active">
+                <a href="">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Home</span>
+                </a>        
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fa-sharp fa-solid fa-clipboard-user"></i>
+                  <span>Students Accounts & Records</span>
+                </a>        
+              </li>
+
+              <li>
+                <a href="">
+                <i class="fa-sharp fa-solid fa-square-parking"></i>
+                  <span>Parking Slot</span>
+                </a>
+              </li>
+        
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-shield-halved"></i>
+                <span> QR Checker Accounts</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-lock"></i>
+                <span> Admin Accounts</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-qrcode"></i>
+                <span> Motorcycle Records</span>
+                </a>
+              </li>
+        
+              <li>
+                <a href="">
+                  <i class="fa-sharp fa-solid fa-clipboard"></i>
+                <span> Reports Records</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+        
+              <li class="logout">
+                <a href="">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <div class="wrapper">
+              <div class="title">
+                <span>Administrator</span>
+                <br>
+                <br>
+                <h2>Dashboard</h2>
+              </div>
+              <div class="userinfo">
+                <div class="searchbox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+                </div>
+                <img src="profile3.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="cardcontainer">
+             <h3 class="title">Today's Data</h3>
+              <div class="cardwrapper">
+
+                <div class="card blue">
+                  <div class="head">
+                    <div class="ammount">
+                      <span class="title2">Students List:</span>
+                     <span class="ammountvalue">500</span>
+                    </div>
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <span class="detail">Students</span>
+                </div>
+
+                <div class="card orange">
+                  <div class="head">
+                    <div class="ammount">
+                      <span class="title3">QR Checker List:</span>
+                     <span class="ammountvalue">50</span>
+                    </div>
+                    <i class="fa-solid fa-person-military-pointing"></i>
+                  </div>
+                  <span class="detail">QR Checkers</span>
+                </div>
+
+                <div class="card">
+                  <div class="head">
+                    <div class="ammount">
+                      <span class="title4">Admin List:</span>
+                     <span class="ammountvalue">5</span>
+                    </div>
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <span class="detail">Administators</span>
+                </div>
+                
+                </div>
+              </div>
+            <div class="tabular">
+           <h3 class="title">Students List Data</h3>
+           <div class="tablecontainer">
+             <table>
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+                <tbody>
+
+                  <tr>
+                    <td>James</td>
+                    <td>James@gmail.com</td>
+                    <td>James123</td>
+                    <td><button>EDIT</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>Jack</td>
+                    <td>Jack@gmail.com</td>
+                    <td>Jack123</td>
+                    <td><button>EDIT</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>Joshua</td>
+                    <td>Joshua@gmail.com</td>
+                    <td>Joshua123</td>
+                    <td><button>EDIT</button></td>
+                  </tr>
+
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="7">Total Students: 3 </td>
+                  </tr>
+                </tfoot>
+             </table>
+           </div>
+            </div>
+          </div>
+       </body>
+</html>

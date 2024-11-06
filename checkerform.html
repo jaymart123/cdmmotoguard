@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="checkerform.css">
+   <link rel="icon" type="image/jpg" href="cdmlogo.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <title>QR Checker Form -MotoPark</title>
+   <script src = "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+   <script src= "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js"></script>
+</head>
+   <body> 
+<!--------------------------------------TICKET CHECKER FORM----------------------------------->
+     <div class="name"  data-aos="fade-down">
+         <a href="index.html">
+         <i id="back" class="fa-solid fa-backward"></i></a>
+         <h2 class="h2" data-aos="fade-down">QR CHECKER FORM</h2>
+
+      <div class="container"  data-aos="fade-down">
+       <div class="signin-signup">
+         <form method="post" action="checkerregister.php" class="sign-in-form" >
+         <h2 class="title">Sign In</h2>
+         <div class="input-field">
+         <i class="fas fa-user"></i>
+         <input type="text" placeholder="Username"  id="username">
+       </div>
+
+       <div class="input-field">
+         <i class="fas fa-lock"></i>
+         <input type="password" placeholder="Password">
+         </div>
+         <input type="submit" value="Sign in" class="btn" name="sign-in-btn">
+         </form>
+  
+         <form method="post" id="signIn" action="" class="sign-up-form">
+         <h2 class="title">Sign Up</h2>
+         <div class="input-field">
+         <i class="fas fa-user"></i>
+         <input type="text" placeholder="Username" id="username">
+       </div>
+
+       <div class="input-field">
+         <i class="fas fa-envelope"></i>
+         <input type="text" placeholder="Email" id="email">
+         </div>
+       
+           <div class="input-field">
+         <i class="fas fa-lock"></i>
+         <input type="password" placeholder="Password" id="password">
+         </div>
+       
+         <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Confirm Password">
+          </div> 
+         <input type="submit" value="Sign Up" class="btn" name="sign-up-btn">
+         </form>
+       </div>
+
+       <div class="panels-container">
+         <div class="panel left-panel">
+         <div class="content">
+         <h3>Member of QR Checker?</h3>
+         <p>Complete the signin process to enter in dashboard. Thank you!</p>
+         <button class="btn" id="sign-in-btn">Sign In</button>
+         </div>
+         <img src="signin.svg" alt="" class="image">
+       </div>
+
+       <div class="panel right-panel">
+         <div class="content">
+         <h3>Be a QR Checker?</h3>
+         <p>Complete the signup process to enter. Thank you!</p>
+         <button class="btn" id="sign-up-btn">Sign Up</button>
+         </div>
+         <img src="signup.svg" alt="" class="image">
+       </div>
+     </div>
+   </div>
+   </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+       AOS.init({
+       offset: 200,
+       duration: 2000,
+       });
+   </script>
+
+<script src="checkerform.js"></script>
+
+<script>
+ const firebaseConfig = {
+    apiKey: "AIzaSyBrEwU8l4OAg68khE3-0GKzB_00TAa6mww",
+    authDomain: "cdm-motoparkdb.firebaseapp.com",
+    databaseURL: "https://cdm-motoparkdb-default-rtdb.firebaseio.com",
+    projectId: "cdm-motoparkdb",
+    storageBucket: "cdm-motoparkdb.appspot.com",
+    messagingSenderId: "539158388871",
+    appId: "1:539158388871:web:e11fc15333e1824baad822",
+    measurementId: "G-74EL414YCB"
+  };
+
+const app = firebase.initializeApp(firebaseConfig);
+const database = firebase.database(app);
+
+function saveData() {
+            const username = document.getElementById('username').value;
+            database.ref('users/' + username).set({
+                username: username,
+                timestamp: new Date().toISOString()
+            }).then(() => {
+                alert('Data saved successfully');
+            }).catch((error) => {
+                console.error('Error saving data:', error);
+            });
+        }
+
+
+</script>
+   </body>
+</html>
+  

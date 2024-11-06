@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+ body {
+    display: flex;
+ }
+ .brand{
+    padding-top: 1px;
+    padding-bottom: 2rem;
+   margin: 8px 0;
+   border-radius: 8px;
+   transition: all 0.5s ease-in-out;
+   font-size: 14px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 1.1rem; 
+ }
+ .brand i{
+    font-size: 3.1rem;
+    color: white;
+    padding-left: 0;
+ }
+ .brand span{ 
+   font-size: 1.2rem;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bold;
+   color: white;
+ }
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 130px;
+    padding: 0 1.7rem;
+    color: aqua;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(25, 175, 90, 0.99);
+}
+.sidebar:hover{
+    width: 255px;
+    transition: 0.5s;
+}
+.logo{
+    height: 5px;
+    padding-left: 16px;
+}
+.menu{
+    height: 10%;
+    position: relative;
+    list-style: none;
+    padding:  0.5rem 0 1rem 1rem;
+}
+.menu li{
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, 
+.active{
+  background: white;
+}
+.menu a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.menu a i {
+    font-size: 1rem;
+}
+.logout {
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.content{
+    position: relative;
+    background: rgb(26, 221, 241, 0.99);
+    width: 100%;
+    padding: 1rem;
+}
+.wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    padding:10px 2rem;
+    margin-bottom: 1rem;
+}
+.title{
+    color: black;
+}
+.userinfo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.searchbox{
+    background: rgba(237, 237, 237 );
+    border-radius: 15px;
+    color: rgb(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.searchbox input{
+    background: transparent;
+    padding: 10px;
+}
+.searchbox i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.searchbox i:hover{
+    transform: scale(1.1);
+}
+
+.cardcontainer{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.cardwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.title{
+    color: black;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.card{
+    background: rgba(25, 132, 19, 0.8);
+    border-radius: 10px;
+    padding: 2.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ammount{
+    display: flex;
+    flex-direction: column;
+}
+
+.title2{
+    font-size: 12px;
+    font-weight: 200;
+}
+.title3{
+    font-size: 12px;
+    font-weight: 200;
+}
+.title4{
+    font-size: 12px;
+    font-weight: 200;
+}
+.ammountvalue{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.icon{
+    color: yellow;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: black;
+}
+.detail{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+}
+.fa-user{
+    color: yellow;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: black;
+}
+.fa-person-military-pointing{
+    color: yellow;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: black;
+}
+.fa-user-tie{
+    color: yellow;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: black;
+}
+
+.blue{
+    background: blue;
+}
+
+.orange{
+    background: orange;
+}
+.tabular{
+    background: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.tablecontainer{
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+thead{
+    background:rgba(25, 175, 90, 0.99);
+}
+th{
+    padding: 15px;
+    text-align: left;
+}
+tbody{
+    background: black;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+}
+tr:nth-child(even) {
+    background: black;
+}
+tfoot{
+    background:rgba(25, 175, 90, 0.99) ;
+    font-weight: bold;
+}
+tfoot td{
+  padding: 15px;
+}
+.tablecontainer button{
+    color: red;
+    background: none;
+    cursor: pointer;
+}
